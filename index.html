@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>@Crossroads | Where Ideas Meet</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.speaker{
+    background:white;
+    text-align:center;
+    padding:20px;
+    border-radius:10px;
+}
+
+.speaker img{
+    width:220px;
+    height:280px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+.slideshow-delhi img,
+.slideshow-patna img,
+.slideshow-partition img{
+    width:100%;
+    max-width:900px;
+    height:auto;
+    max-height:600px;
+
+    display:none;
+    margin:auto;
+
+    border:3px solid #4169E1;
+    border-radius:12px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.18);
+
+    padding:4px;
+    background:white;
+}
+
+body{
+    font-family: Georgia, serif;
+    line-height:1.7;
+    color:#222;
+    background:#faf9f6;
+}
+
+header{
+    background:linear-gradient(rgba(15,23,42,0.85),rgba(15,23,42,0.85)),
+    url('images/hero.jpg');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+header h1{
+    font-size:4rem;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.4rem;
+}
+
+nav{
+    background:#0f172a;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+nav li{
+    margin:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    display:block;
+    padding:15px 20px;
+}
+
+nav a:hover{
+    background:#7a1f2b;
+}
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:70px 20px;
+}
+
+h2{
+    color:#0f172a;
+    margin-bottom:25px;
+    font-size:2rem;
+    border-left:5px solid #b38a3d;
+    padding-left:15px;
+}
+
+.hero-text{
+    max-width:800px;
+    margin:auto;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.event{
+    background:white;
+    padding:25px;
+    margin-bottom:25px;
+    border-left:5px solid #7a1f2b;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+.event h3{
+    margin-bottom:10px;
+}
+
+.speakers{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.speaker{
+    background:white;
+    text-align:center;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:10px;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+}
+
+.contact-box{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+}
+
+@media(max-width:768px){
+    header h1{
+        font-size:2.5rem;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <div class="hero-text">
+        <h1>@Crossroads</h1>
+        <p>Where Ideas Meet</p>
+        <br>
+        <p>
+            An evolving collective fostering critical thinking,
+            interdisciplinary dialogue, and intellectual exchange.
+        </p>
+    </div>
+</header>
+
+<nav>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#intersections">Intersections</a></li>
+<li><a href="#events">Events</a></li>
+<li><a href="#speakers">Speakers</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section id="about">
+<h2>About @Crossroads</h2>
+
+<p>
+Based in Delhi, @Crossroads is an evolving collective of passionate
+individuals dedicated to fostering creative thinking and meaningful dialogue
+through academic events, public conversations, lectures, panel discussions,
+and workshops.
+</p>
+
+<br>
+
+<p>
+In collaboration with the India International Centre (IIC), New Delhi,
+@Crossroads seeks to create a vibrant forum that bridges disciplines and
+encourages innovative thinking by bringing together scholars, experts,
+students, professionals, and curious minds.
+</p>
+</section>
+
+<section id="intersections">
+<h2>Intersections @Crossroads</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Sciences, Humanities & Social Sciences</h3>
+<p>
+Exploring how conversations between different fields shape our understanding
+of society, culture, technology, history, and the human condition.
+</p>
+</div>
+
+<div class="card">
+<h3>Disciplines & Perspectives</h3>
+<p>
+Bringing together diverse methodologies, geographies, historical periods,
+professions, and intellectual traditions.
+</p>
+</div>
+
+<div class="card">
+<h3>Academia & the Public</h3>
+<p>
+Making important ideas and debates accessible to students, researchers,
+educators, professionals, and engaged citizens.
+</p>
+</div>
+
+</div>
+</section>
+
+<section id="events">
+<h2>Past Events</h2>
+
+<div class="event">
+<h3>Delhi and its Textured Pasts</h3>
+<p><strong>Date:</strong> 03 November 2025</p>
+<p><strong>Speakers:</strong> Amar Farooqui, Sohail Hashmi and Shubham Mishra</p>
+<p>
+A panel discussion exploring the many historical layers,
+memories, and urban experiences that have shaped Delhi.
+</p>
+</div>
+
+<div class="event">
+<h3>A Persian Palace in Patna? Looking Afresh at the Mauryas and Achaemenids</h3>
+<p><strong>Date:</strong> 30 January 2026</p>
+<p><strong>Speakers:</strong> Upinder Singh and Nayanjot Lahiri</p>
+<p>
+A conversation revisiting connections between the Mauryan world and
+Achaemenid Persia through archaeology, architecture, and history.
+</p>
+</div>
+
+<div class="event">
+<h3>Recalibrating Partition</h3>
+<p><strong>Date:</strong> 17 March 2026</p>
+<p><strong>Speakers:</strong> Debjani Sengupta, Yogesh Snehi and Anindita Ghoshal</p>
+<p>
+A panel discussion examining new perspectives on Partition,
+memory, displacement, and South Asian history.
+</p>
+</div>
+
+<h2 style="margin-top:60px;">Upcoming Events</h2>
+
+<div class="event">
+<p>New events will be announced soon.</p>
+</div>
+
+</section>
+
+<section id="speakers">
+<h2>Speakers</h2>
+
+<div class="speakers">
+
+<div class="speaker">
+    <img src="Images/farooqui.jpg" alt="Prof. Amar Farooqui">
+    <h3>Prof. Amar Farooqui</h3>
+    <p>Historian</p>
+</div>
+<div class="speaker">
+    <img src="Images/hashmi.jpg" alt="Mr. Sohail Hashmi">
+    <h3>Mr.Sohail Hashmi</h3>
+    <p>Historian</p>
+</div>
+<div class="speaker">
+    <img src="Images/mishra.jpg" alt="Mr. Shubham Mishra">
+    <h3>Mr.Shubham Mishra</h3>
+    <p>Architect & Urban Planner</p>
+</div>
+
+<div class="speaker">
+    <img src="Images/upindersingh.jpg" alt="Prof. Upinder Singh">
+    <h3>Prof. Upinder Singh</h3>
+    <p>Historian</p> 
+</div>
+<div class="speaker">
+    <img src="Images/nayanjotlahiri.jpg" alt="Prof. Nayanjot Lahiri">
+    <h3>Prof. Nayanjot Lahiri</h3>
+    <p>Historian</p>
+</div>
+
+<div class="speaker">
+    <img src="Images/sengupta.jpg" alt="Dr. Debjani Sengputa">
+    <h3>Dr. Debjani Sengupta</h3>
+    <p>Author & Literarian</p>
+</div>
+<div class="speaker">
+    <img src="Images/snehi.jpg" alt="Dr.Yogesh Snehi">
+    <h3>Dr. Yogesh Snehi</h3>
+    <p>Historian</p>
+</div>
+<div class="speaker">
+    <img src="Images/ghoshal.jpg" alt="Dr. Anandita Ghoshal">
+    <h3>Dr. Anandita Ghoshal</h3>
+    <p>Historian</p>
+</div>
+</section>
+
+<section id="gallery">
+<h2>Gallery</h2>
+
+<section id="gallery">
+<h2>Event Galleries</h2>
+
+<h3>Delhi and its Textured Pasts (03 November 2025)</h3>
+
+<div class="slideshow-delhi">
+    <img class="delhi-slide" src="Images/IMG-20260606-WA0011.jpg">
+    <img class="delhi-slide" src="Images/153594.jpg">
+    <img class="delhi-slide" src="Images/166212.jpg">
+    <img class="delhi-slide" src="Images/166222.jpg">
+    <img class="delhi-slide" src="Images/166206.jpg">
+    <img class="delhi-slide" src="Images/166213.jpg">
+</div>
+
+<br><br>
+
+<h3>A Persian Palace in Patna? Looking Afresh at the Mauryas and Achaemenids (30 January 2026)</h3>
+
+<div class="slideshow-patna">
+    <img class="patna-slide" src="Images/IMG-20260606-WA0048.jpg">
+    <img class="patna-slide" src="Images/153536.jpg">
+    <img class="patna-slide" src="Images/153533.jpg">
+    <img class="patna-slide" src="Images/153525.jpg">
+    <img class="patna-slide" src="Images/153543.jpg">
+    <img class="patna-slide" src="Images/153539.jpg">
+</div>
+
+<br><br>
+
+<h3>Recalibrating Partition (17 March 2026)</h3>
+
+<div class="slideshow-partition">
+    <img class="partition-slide" src="Images/IMG-20260606-WA0049.jpg">
+    <img class="partition-slide" src="Images/153493.jpg">
+    <img class="partition-slide" src="Images/153498.jpg">
+    <img class="partition-slide" src="Images/153479.jpg">
+    <img class="partition-slide" src="Images/153480.jpg">
+</div>
+
+</section>
+
+</div>
+
+<p style="margin-top:20px;">
+
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+
+<div class="contact-box">
+<p><strong>Email:</strong> contact@crossroads.org</p>
+<p><strong>Location:</strong> New Delhi, India</p>
+<p><strong>Collaboration Enquiries:</strong> We welcome partnerships, academic collaborations, and event proposals.</p>
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 @Crossroads | Where Ideas Meet</p>
+</footer>
+
+<script>
+
+function createSlideshow(className, interval) {
+
+    let index = 0;
+
+    function showSlides() {
+
+        let slides = document.getElementsByClassName(className);
+
+        for(let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        index++;
+
+        if(index > slides.length) {
+            index = 1;
+        }
+
+        slides[index - 1].style.display = "block";
+
+        setTimeout(showSlides, interval);
+    }
+
+    showSlides();
+}
+
+createSlideshow("delhi-slide", 3000);
+createSlideshow("patna-slide", 3000);
+createSlideshow("partition-slide", 3000);
+
+</script>
+
+</body>
+</html>
